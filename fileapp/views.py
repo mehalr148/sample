@@ -39,6 +39,13 @@ def index(request):
 
 	return render(request,'index.html')
 
+
+def home(request):
+  
+
+	return render(request,'home.html')
+
+
 def extract_info():
 
 	path = os.listdir("C:/Users/User/Desktop/MyDjangoStuff/myproj/media")

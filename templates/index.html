@@ -62,42 +62,6 @@ h1{
     color: #000;
 }
 
-/*.loginbox input[type="text"], input[type="password"]
-{
-    border: none;
-    border-bottom: 2px solid #BF2130;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #000;
-    font-size: 16px;
-}
-.loginbox input[type="submit"]
-{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #BF2130;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-}
-.loginbox input[type="submit"]:hover
-{
-    cursor: pointer;
-    color: #000;
-}
-.loginbox a{
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-}
-
-.loginbox a:hover
-{
-    color: #ffc107;
-}*/
 
 </style>
 <body>
@@ -111,7 +75,7 @@ h1{
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -132,12 +96,11 @@ h1{
         <div class="progress">
   <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-      <!--   <button type="submit" class="btn btn-primary btn-lg">File Upload</button>
-        <button type="" class="btn btn-secondary btn-lg"><a href="{% url 'excel' %}">Download</a></button> -->
+
 
         <div class="d-grid gap-10 col-10 mx-auto">
         <button class="btn btn-primary" type="submit" style="margin-bottom: 20px;margin-top: 50px;background: #290957">Upload Files</button>
-        <a href="{% url 'excel' %}" download><button class="btn btn-primary" type="button" style="background: #290957"">Download Excel
+        <a href="{% url 'excel' %}" download><button class="btn btn-primary" type="button" style="background: #290957">Download Excel
         </button></a>
         
         </div>
